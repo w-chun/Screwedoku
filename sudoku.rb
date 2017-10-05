@@ -1,4 +1,5 @@
 require_relative "board"
+require "byebug"
 
 class SudokuGame
   def self.from_file(filename)
@@ -29,6 +30,7 @@ class SudokuGame
   end
 
   def get_val
+    # debugger
     val = nil
     until val && valid_val?(val)
       puts "Please enter a value between 1 and 9 (0 to clear the tile)"
