@@ -74,7 +74,7 @@ class SudokuGame
   end
 
   def solved?
-    board.grid.flatten.include?(0)
+    board.solved?
   end
 
   def valid_pos?(pos)
